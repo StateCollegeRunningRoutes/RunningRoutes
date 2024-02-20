@@ -1,0 +1,132 @@
+#video-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Set height to viewport height */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+#state-college-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Cover the entire area of its container */
+    object-fit: cover; /* Ensure the video covers the container while maintaining aspect ratio */
+}
+
+
+#state-college-video {
+    pointer-events: none;
+}
+
+
+
+
+header {
+    font-family: Georgia, serif;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    width: 100%; /* Ensure the header covers the entire width of the page */
+}
+
+
+
+
+
+.content {
+    text-align: center; /* Center-align the content */
+    position: relative; /* Set position to relative */
+    margin-top: 0px; /* Add margin space at the top */
+}
+
+.content img {
+    position: absolute; /* Set position to absolute */
+    top: 50%; /* Position the image vertically at 50% from the top */
+    right: 0; /* Position the image flush with the right side of the container */
+    transform: translateY(-50%); /* Adjust the image position vertically to center it */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+
+.button-container {
+    text-align: center; /* Center-align the buttons */
+}
+
+.btn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 20px 15px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 20px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+
+
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+#documented-runs {
+    padding: 20px; /* Add padding to the section */
+    text-align: center; /* Center-align section content */
+    font-size: 25px;
+    color: #ffd795;
+    font-family: Georgia, serif;
+}
+
+#documented-runs h2 {
+    margin-bottom: 50px; /* Add margin below the heading */
+    color: #ffd795
+}
+
+
+#documented-runs table {
+    font-family: Georgia, serif; /* Set font to Georgia serif */
+    border-collapse: collapse; /* Collapse table borders */
+    width: 60%; /* Make the table width 100% of its container */
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#documented-runs th, #documented-runs td {
+    padding: 10px; /* Add padding to table cells */
+    border-bottom: 1px solid #ccc; /* Add a border between table rows */
+}
+
+#documented-runs th {
+    font-size:30px;
+    padding: 10px; /* Add padding to table header cells */
+    border-bottom: 2px solid #333; /* Add a thicker border line below table header cells */
+}
+
+table {
+    border-collapse: separate; /* Ensure borders are separate */
+    border-spacing: 10px; /* Adjust the spacing between columns */
+}
+
+#documented-runs td {
+    color: #ffffff;
+}
+
+
+
+
+footer {
+    color: #ffffff; /* Change the font color to dark gray */
+}
