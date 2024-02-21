@@ -1,3 +1,5 @@
+/* ----------------------------------------- VIDEO CSS ---------------------------------------------------------*/
+
 #video-section {
     position: relative;
     width: 100%;
@@ -19,6 +21,26 @@
     pointer-events: none;
 }
 
+.video-container {
+    position: relative;
+    z-index: 1; /* Set a lower z-index value */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -34,6 +56,18 @@ header {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 .content {
     text-align: center; /* Center-align the content */
     position: relative; /* Set position to relative */
@@ -44,13 +78,56 @@ header {
     position: absolute; /* Set position to absolute */
     top: 50%; /* Position the image vertically at 50% from the top */
     right: 0; /* Position the image flush with the right side of the container */
-    transform: translateY(-50%); /* Adjust the image position vertically to center it */
+    transform: translateY(-70%); /* Adjust the image position vertically to center it */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
     height: auto; /* Maintain aspect ratio */
+    padding:50px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Apply basic styling to the navigation bar */
+.navbar {
+    position: fixed; /* Position the navbar fixed at the top */
+    top: 0; /* Align the navbar to the top of the viewport */
+    width: 100%; /* Make the navbar full-width */
+    background-color: #000000; /* Background color for the navbar */
+    padding: 10px 0; /* Add padding to the navbar */
+    text-align: center; /* Align buttons to the center */
+    z-index: 1000;
+
+}
+/* Apply styling to individual buttons */
+.navbar button {    
+    background-color: #ffffff; /* Button background color */
+    color: #2b00ff; /* Button text color */
+    border: none; /* Remove button borders */
+    padding: 10px 20px; /* Add padding to the buttons */
+    margin: 0 10px; /* Add margin between buttons */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Apply hover effect to buttons */
+.navbar button:hover {
+    background-color: #aaa; /* Change background color on hover */
+    color: #fff; /* Change text color on hover */
+}
 
 
 .button-container {
@@ -69,6 +146,11 @@ header {
     cursor: pointer;
     border-radius: 10px;
 }
+
+
+
+
+
 
 
 
@@ -92,6 +174,26 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------------------------TABLE CSS-------------------------------------------------------- */
+
+
+
+
 #documented-runs table {
     font-family: Georgia, serif; /* Set font to Georgia serif */
     border-collapse: collapse; /* Collapse table borders */
@@ -101,6 +203,8 @@ body {
 table {
     margin-left: auto;
     margin-right: auto;
+    border-collapse: separate; /* Ensure borders are separate */
+    border-spacing: 10px; /* Adjust the spacing between columns */
 }
 
 
@@ -115,16 +219,24 @@ table {
     border-bottom: 2px solid #333; /* Add a thicker border line below table header cells */
 }
 
-table {
-    border-collapse: separate; /* Ensure borders are separate */
-    border-spacing: 10px; /* Adjust the spacing between columns */
-}
-
 #documented-runs td {
     color: #ffffff;
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------FOOTER CSS---------------------------------------------- */
 
 
 footer {
