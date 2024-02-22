@@ -97,7 +97,7 @@ header {
     position: absolute; /* Set position to absolute */
     top: 50%; /* Position the image vertically at 50% from the top */
     right: 0; /* Position the image flush with the right side of the container */
-    transform: translateY(-40%); /* Adjust the image position vertically to center it */
+    transform: translateY(-60%); /* Adjust the image position vertically to center it */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
     height: auto; /* Maintain aspect ratio */
     padding:50px;
@@ -163,14 +163,13 @@ header {
 
 
 
-
 body {
     background-color: rgb(0, 0, 0);
 }
 
 
 #documented-runs {
-    padding: 20px; /* Add padding to the section */
+    padding: 0px; /* Add padding to the section */
     text-align: center; /* Center-align section content */
     font-size: 25px;
     color: #ffd795;
