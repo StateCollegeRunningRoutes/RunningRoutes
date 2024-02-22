@@ -3,7 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     video.play();
 });
 
-
 function myFunction1() {
     window.open("https://donate.thon.org/index.cfm?fuseaction=donorDrive.participant&participantID=92653", "_blank");
 }
@@ -18,7 +17,7 @@ function myFunction3() {
     
 }
 function myFunction4() {
-    window.open("https://earth.google.com/web/@40.79977953,-77.90585827,395.47009001a,4115.15231993d,30y,0h,0t,0r/data=MikKJwolCiExb09MWGM5ZjRkYktWa19qbXQwZGhLYktCeEcxRmJOdHMgAToDCgEy", "_blank");
+    window.open("https://routeshuffle.com/", "_blank");
     
 }
 function myFunction5() {

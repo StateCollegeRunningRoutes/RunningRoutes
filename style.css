@@ -28,6 +28,25 @@
 
 
 
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust the minmax values as needed */
+    gap: 20px; /* Adjust the gap between images as needed */
+  }
+
+/* Style for each grid item */
+.image-grid-item {
+    text-align: center;
+}
+
+    /* Style for the images */
+.image-grid-item img {
+    max-width: 150%;
+    height: auto;
+    border-radius: 8px; /* Optional: add border-radius for a rounded corner effect */
+}
+
+
 
 
 
@@ -78,17 +97,11 @@ header {
     position: absolute; /* Set position to absolute */
     top: 50%; /* Position the image vertically at 50% from the top */
     right: 0; /* Position the image flush with the right side of the container */
-    transform: translateY(-70%); /* Adjust the image position vertically to center it */
+    transform: translateY(-40%); /* Adjust the image position vertically to center it */
     max-width: 100%; /* Ensure the image doesn't exceed its container width */
     height: auto; /* Maintain aspect ratio */
     padding:50px;
 }
-
-
-
-
-
-
 
 
 
@@ -115,8 +128,7 @@ header {
 }
 /* Apply styling to individual buttons */
 .navbar button {    
-    background-color: #ffffff; /* Button background color */
-    color: #2b00ff; /* Button text color */
+
     border: none; /* Remove button borders */
     padding: 10px 20px; /* Add padding to the buttons */
     margin: 0 10px; /* Add margin between buttons */
@@ -125,17 +137,17 @@ header {
 
 /* Apply hover effect to buttons */
 .navbar button:hover {
-    background-color: #aaa; /* Change background color on hover */
-    color: #fff; /* Change text color on hover */
+    background-color: white; /* Change background color on hover */
+    color: black; /* Change text color on hover */
 }
 
 
 .button-container {
-    text-align: center; /* Center-align the buttons */
-}
+    margin: 0 auto; /* Center the container horizontally */
+  }
 
 .btn {
-    background-color: #4CAF50; /* Green */
+    text-align: center;
     border: none;
     color: white;
     padding: 20px 15px;
@@ -146,9 +158,6 @@ header {
     cursor: pointer;
     border-radius: 10px;
 }
-
-
-
 
 
 
@@ -178,17 +187,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* ------------------------------------------------------TABLE CSS-------------------------------------------------------- */
 
 
@@ -197,14 +195,14 @@ body {
 #documented-runs table {
     font-family: Georgia, serif; /* Set font to Georgia serif */
     border-collapse: collapse; /* Collapse table borders */
-    width: 60%; /* Make the table width 100% of its container */
+    width: 80%; /* Make the table width 100% of its container */
 }
 
 table {
     margin-left: auto;
     margin-right: auto;
     border-collapse: separate; /* Ensure borders are separate */
-    border-spacing: 10px; /* Adjust the spacing between columns */
+    border-spacing: 100px; /* Adjust the spacing between columns */
 }
 
 
