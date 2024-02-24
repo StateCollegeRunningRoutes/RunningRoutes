@@ -24,6 +24,3 @@ function myFunction5() {
     alert("This page will be up and running soon");
     
 }
-
-    
-
