@@ -43,5 +43,5 @@ function displayRunningRoutes(routes) {
     });
 }
 
-// Call the function to display running routes
 displayRunningRoutes(runningroutes);
+
