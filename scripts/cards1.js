@@ -40,6 +40,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const viewPreviewButton = document.createElement('a');
         viewPreviewButton.classList.add('btn', 'btn-viewprev');
         viewPreviewButton.textContent = 'View Preview';
+        const cardImage = document.createElement('img'); // Create an image element for the logo
+        cardImage.classList.add('card-image'); // Add a class for styling
+        cardImage.src = route.image;
 
         // Append elements to the card
         cardBody.appendChild(cardTitle);
