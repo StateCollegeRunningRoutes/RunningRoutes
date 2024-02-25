@@ -37,11 +37,16 @@ document.addEventListener("DOMContentLoaded", function() {
         viewDetailsButton.classList.add('btn', 'btn-secondary');
         viewDetailsButton.textContent = 'View Details';
 
+        const viewPreviewButton = document.createElement('a');
+        viewPreviewButton.classList.add('btn', 'btn-viewprev');
+        viewPreviewButton.textContent = 'View Preview';
+
         // Append elements to the card
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
         cardBody.appendChild(viewRouteButton);
         cardBody.appendChild(viewDetailsButton);
+        cardBody.appendChild(viewPreviewButton);
 
         card.appendChild(cardVideo);
         card.appendChild(cardBody);
@@ -54,20 +59,33 @@ document.addEventListener("DOMContentLoaded", function() {
         // Add event listeners for mouseenter and mouseleave
         card.addEventListener('mouseenter', handleMouseEnter);
         card.addEventListener('mouseleave', handleMouseLeave);
+
+        // Event listener for "View Preview" buttons
+        viewPreviewButton.addEventListener('click', function() {
+            // Toggle a class on the card wrapper to activate the styles
+            cardWrapper.classList.toggle('active');
+            card.classList.toggle('active');
+        });
     });
-
-    // Function to handle mouseenter with delay
-    function handleMouseEnter(event) {
-        const card = event.currentTarget;
-        card.dataset.hoverTimeout = setTimeout(function() {
-            card.classList.add('hover-effect');
-        }, 2000); // 2 seconds delay
-    }
-
-    // Function to handle mouseleave and clear timeout
-    function handleMouseLeave(event) {
-        const card = event.currentTarget;
-        clearTimeout(card.dataset.hoverTimeout);
-        card.classList.remove('hover-effect');
-    }
 });
+
+// Function to handle mouseenter with delay
+function handleMouseEnter(event) {
+    const card = event.currentTarget;
+    card.dataset.hoverTimeout = setTimeout(function() {
+        card.classList.add('hover-effect');
+        
+    }, 2000); // 2 seconds delay
+}
+
+// Function to handle mouseleave and clear timeout
+function handleMouseLeave(event) {
+    const card = event.currentTarget;
+    clearTimeout(card.dataset.hoverTimeout);
+    card.classList.remove('hover-effect');
+}
+
+    
+
+
+

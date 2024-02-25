@@ -550,26 +550,19 @@ table {
 }
 
 
-
-
-.card-wrapper:hover::before {
+/* THIS PART GLITCHIGNGGGG=================================== */
+.card-wrapper.active::before {
     content: "";
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.9); 
+    background: rgba(0, 0, 0, 0.9);
     z-index: 1000;
 }
 
-
-.card-wrapper:hover .card {
-    z-index: 2000;
-}
-
-
-.card:hover {
+.card.active {
     transform: scale(1.2);
     width: 40%;
     height: 120vh;
@@ -578,6 +571,11 @@ table {
     top: 15%; 
     left: 30%; 
 }
+
+.card-wrapper.active .card {
+    z-index: 2000;
+}
+
 
 
 
