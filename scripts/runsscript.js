@@ -1,3 +1,9 @@
+
+
+//OLD TABLE DATA CODE
+
+
+
 let runshtml = "";
 
 runningroutes.forEach((run, index) => {
@@ -27,6 +33,6 @@ document.querySelectorAll('.more-info-btn').forEach(item => {
     item.addEventListener('click', event => {
         const index = event.target.getAttribute('data-index');
         const run = runningroutes[index];
-        window.location.href = `more_info_page.html?routename=${encodeURIComponent(run.routename)}&routelength=${encodeURIComponent(run.routelength)}&link=${encodeURIComponent(run.link)}`;
+        window.location.href = `pages/more_info_page.html?routename=${encodeURIComponent(run.routename)}&routelength=${encodeURIComponent(run.routelength)}&link=${encodeURIComponent(run.link)}`;
     });
 });
