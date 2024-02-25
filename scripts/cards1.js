@@ -37,12 +37,16 @@ document.addEventListener("DOMContentLoaded", function() {
         viewDetailsButton.classList.add('btn', 'btn-secondary');
         viewDetailsButton.textContent = 'View Details';
 
+        const cardImage = document.createElement('img'); // Create an image element for the logo
+        cardImage.classList.add('card-image'); // Add a class for styling
+        cardImage.src = route.image;
+
         // Append elements to the card
         cardBody.appendChild(cardTitle);
         cardBody.appendChild(cardText);
         cardBody.appendChild(viewRouteButton);
         cardBody.appendChild(viewDetailsButton);
-
+        cardBody.appendChild(cardImage);
         card.appendChild(cardVideo);
         card.appendChild(cardBody);
 
