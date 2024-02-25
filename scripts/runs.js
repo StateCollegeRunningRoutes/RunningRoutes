@@ -16,7 +16,7 @@ video: "videos/state-college-video.mp4"
 {
     routename:"Allen Street Run",
     routelength: 3.58,
-    video: "vidoes/state-college-video.mp4",
+    video: "videogits/state-college-video.mp4",
     link:"https://earth.google.com/web/@40.79347015,-77.86016505,347.47222898a,2258.42899003d,30y,0h,0t,0r/data=MikKJwolCiExVGdHVXVYZmhyeTFvMjktVkQ3SUY1c2tOWXQyX1piMGMgAToDCgEy"
 },
 {
