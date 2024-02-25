@@ -24,6 +24,32 @@
             <button id="myButton4" class="btn btn-primary" onclick="myFunction4()">AI Route Generator</button>
             <button id="myButton5" class="btn btn-primary" onclick="myFunction5()">Other Information</button>
         </div>
+
+        <nav role="navigation">
+            <div id="overlay"></div>
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <a href="#"><li>Home</li></a>
+                    <a href="#"><li>About</li></a>
+                    <a href="#"><li>Info</li></a>
+                    <a href="#"><li>Contact</li></a>
+                    <a href="https://erikterwan.com/" target="_blank"><li>Show me more</li></a>
+                </ul>
+            </div>
+            <script>
+                document.querySelector('#menuToggle input').addEventListener('change', function() {
+                    if (this.checked) {
+                        document.getElementById('overlay').style.display = 'block';
+                    } else {
+                        document.getElementById('overlay').style.display = 'none';
+                    }
+                });
+            </script>
+        </nav>
     </div>
     <main>
         <section id="video-section">
@@ -35,17 +61,7 @@
             </div>
             <h1  id="website-title" class="animate__animated animate__bounceInDown" style="font-size: 70px">State College Running Routes</h1>
         </section>
-        <h2 class="runs-header">---------- Documented Runs ----------</h2>
-        
-        <!--OLD TABLE CODE
-
-        <section id="documented-runs">
-            <h2 style="padding: 100px 50px 50px 50px; font-size: 40px ; color: aliceblue;" >------------------------------ Documented Runs -------------------------------</h2>
-            <table>
-                <tbody class = "js-runroute-summary"></tbody>
-            </table>
-        </section>
-    -->
+        <h2 class="runs-header">Documented Runs</h2>
         <section id="run-details-section"></section>
         <section>
             <table>
@@ -54,8 +70,30 @@
         </section>
     </main>
     <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FAQ</h3>
+                <ul>
+                    <li><a href="#">Question 1</a></li>
+                    <li><a href="#">Question 2</a></li>
+                    <li><a href="#">Question 3</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: example@example.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are student-athletes of all different backgrounds with unique personal goals but one common mentality:
+                    the no quit mentality. We Are!
+                </p>
+            </div>
+        </div>
         <p>&copy; 2024 State College Running Routes. All rights reserved.</p>
     </footer>
+    
     <script src = "scripts/script.js"></script>
     <script src = "scripts/runs.js"> </script>
     <script src = "scripts/runsscript.js"></script>

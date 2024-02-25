@@ -50,5 +50,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Append the card wrapper to the container
         runRouteCardsContainer.appendChild(cardWrapper);
+
+        // Add event listeners for mouseenter and mouseleave
+        card.addEventListener('mouseenter', handleMouseEnter);
+        card.addEventListener('mouseleave', handleMouseLeave);
     });
+
+    // Function to handle mouseenter with delay
+    function handleMouseEnter(event) {
+        const card = event.currentTarget;
+        card.dataset.hoverTimeout = setTimeout(function() {
+            card.classList.add('hover-effect');
+        }, 2000); // 2 seconds delay
+    }
+
+    // Function to handle mouseleave and clear timeout
+    function handleMouseLeave(event) {
+        const card = event.currentTarget;
+        clearTimeout(card.dataset.hoverTimeout);
+        card.classList.remove('hover-effect');
+    }
 });
